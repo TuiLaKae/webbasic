@@ -25,7 +25,6 @@
     flex-direction: row;
     width: 100%;
 }
-
 .footercontainer{
     display: flex;
     justify-content: space-between;
@@ -37,8 +36,14 @@
 }
 .menu-a{
    margin: 10px;
+   text-decoration: none;
+   color: rgb(169, 36, 187);
+   font-weight: bolder;
+   font-size: large;
 }
-
+.menu-a :hover{
+   text-decoration: underline;
+}
 .product-detail-container{
     display: flex;
     margin: 80px 0;
@@ -67,13 +72,6 @@ button{
     background-color: lightgrey;
     border-radius: 30%;
 }
-.float{
-    float: left;
-    padding-right: 5px;
-}
-.NewRelease{
-    color: black;
-}
 .GoiY{
     display: flex;
     margin-left: 0px;
@@ -81,4 +79,22 @@ button{
 .GoiYContent{
     padding: 0 80px 0 0;
     justify-content: space-around;
+}
+
+.product-div2{
+    width: 600px;
+    margin: 40px;
+}
+.a{
+    text-decoration: none;
+    color: rgb(40, 80, 212);
+}
+.a:hover{
+    text-decoration: underline;
+}
+.button2{
+    width: 50px;
+    height: 30px;
+    background-color: ghostwhite;
+    border-radius: 30%;
 }
