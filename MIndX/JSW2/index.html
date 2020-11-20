@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hello">Xin Chào</h1>
+    <script>
+        // let ten = "Kiet";
+        // console.log(ten);
+        // ten = "Kae";
+        // console.log(ten);
+        // const pi = 2109;
+        // console.log(pi);
+        // let FirstName = prompt("Bạn Tên Gì?");
+        // console.log(FirstName);
+        // document.getElementById("hello").innerHTML = "Bonjour";
+        // document.getElementById("hello").style.backgroundColor = "red";
+        // let changecolor = document.getElementById("hello");
+        // changecolor.style.color = "white";
+        // let underline = document.getElementById("hello");
+        // underline.style.textDecoration  = "underline";
+        // let n;
+        // let S = 0;
+        // let tinhtong = function(n){
+        //     for (let i = 0; i<=n; i++){
+        //         S+=i;
+        //     }
+        // console.log(S);
+        // }
+        // tinhtong(10);
+        
+    </script>
+    <img id="lightbulb" src="./IMG/BT MindX/ONbulb.jpg" alt="">
+    <button onclick="ON()">Turn on</button>
+    <button onclick="OFF()">Turn off</button>
+    <script>
+        let lightbulb = document.getElementById("lightbulb");
+        let ON = function(){
+            lightbulb.src = "./IMG/BT MindX/ONbulb.jpg"
+        }
+        let OFF = function(){
+            lightbulb.src = "./IMG/BT MindX/OFFbulb.jpg"
+        }
+    </script>
+    <div style="height: 400px; width: 400px; background-color: black;" id="square"></div>
+    <button onclick="red()">red</button>
+    <button onclick="blue()">blue</button>
+    <button onclick="orange()">orange</button>
+    <script>
+        let red = function(){
+            document.getElementById("square").style.backgroundColor = "red";
+        }
+        let blue = function(){
+            document.getElementById("square").style.backgroundColor = "blue";
+        }
+        let orange = function(){
+            document.getElementById("square").style.backgroundColor = "orange";
+        }
+    </script>
+     
+</body>
+</html>
