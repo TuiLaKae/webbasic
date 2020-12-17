@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="xe"></p>
+     <script>
+    //     let motorbike = {
+    //         ten: "CBR-1000RR",
+    //         sobanhxe: "2",
+    //         mau: "den",
+    //         dongco: "1000cc"
+    //     }
+    //     let tong= JSON.stringify(motorbike);
+    // document.getElementById("xe").innerHTML = tong;
+    // console.log(motorbike);
+    </script> --> 
+
+
+
+    <!-- <p id="game"></p>
+     *******khuc nay la ket hop giua string voi object
+    <script>
+        let trochoi =[
+            { name: "Overwatch", producer: "Blizzard Company", award: "Game of the 2017"},
+            { name: "PUBG", producer: "Tencent", award: "Game of the 2019"},
+            { name: "League of Legend", producer: "Riot", award: "Game of the 2013"},
+        ];
+        let all = JSON.stringify(trochoi);
+        document.getElementById("game").innerHTML = all;
+        console.log(trochoi)
+    </script> -->
+
+
+
+
+    <script>
+
+        let words = [
+        "tuilakae", "phamthekiet", "trinhhainguyen"
+        ];
+       
+        let word = words[Math.floor(Math.random() * words.length)];
+        let answerArray = [];
+        for (let i = 0; i < word.length; i++) {
+        answerArray[i] = "_";
+        }
+        let remainingLetters = word.length;
+        while (remainingLetters > 0) {
+        alert(answerArray.join(" "));
+        let guess = prompt("đoán từ, hoặc bấm Cancel để hủy trò chơi")
+        if (guess === null) {
+        break;
+        } else if (guess.length !== 1) {
+        alert("Mời đoán từ");
+        } else {
+        for (let j = 0; j < word.length; j++) {
+        if (word[j] === guess) {
+        answerArray[j] = guess;
+        remainingLetters--;
+        }
+        }
+        }
+        }
+        alert(answerArray.join(" "));
+        alert(word + "là từ đúng");
+        </script>
+</body>
+</html>
