@@ -1,0 +1,14 @@
+body{
+    background-image: url("https://i.redd.it/6sizbriyxeq21.jpg");
+    background-size: cover;
+}
+.navbar{
+   
+   display: flex;
+   justify-content: center;
+   padding: 1rem;
+}
+.navbar > a{
+    color: white;
+    padding: 1rem;
+}
