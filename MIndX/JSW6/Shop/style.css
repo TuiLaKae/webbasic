@@ -1,0 +1,28 @@
+body{
+    background-image: url("https://i.redd.it/6sizbriyxeq21.jpg");
+    background-size: cover;
+}
+.navbar{
+   
+   display: flex;
+   justify-content: center;
+   padding: 1rem;
+}
+.navbar > a{
+    color: white;
+    padding: 1rem;
+}
+.button{
+    padding-left: 100px;
+}
+.flexcontainer{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flexcontainer > div{
+    width: 30%;
+}
+.flexcontainer-signup{
+    display: flex;
+    flex-wrap: nowrap;
+}
