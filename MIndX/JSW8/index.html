@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="username">
+            Username
+        </label>
+        <input id="username" class="username" name="username" value="">
+
+        <label for="password">
+            Password
+        </label>
+        <input id="password" class="password" name="password" value="">
+    </div>
+    <button><a href="./index.html">Login</a></button>
+    
+    <script>
+        let username = "";
+        let password = "";
+        const handleLogin = () => {
+            username = document.getElementById("username").value;
+            password = document.getElementById("password").value;
+            localStorage.setItem("username", username);
+            localStorage.setItem("password", password);
+        }
+    </script>
+</body>
+</html>

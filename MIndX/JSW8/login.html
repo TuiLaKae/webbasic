@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="styleli.css">
+</head>
+<body>
+    
+    <div>
+        <h1>Login</h1>
+        <input id="email" type="email" placeholder="Email">
+        <input id="password" type="password" placeholder="Mật Khẩu">
+        <button class="formButton" onclick="login()"><a href="./shop.html">SIGN IN</a></button>
+        <p>Không có tài khoản?  <a href="./signup.html">Tạo tài khoản</a></p> 
+        <p id="checkCase" style="display: none">Đăng nhập thất bại, vui lòng thử lại!</p>
+    </div>
+
+    <script>
+        let input_email = document.getElementById("email.value");
+        let input_password = document.getElementById("password.value");
+        let caseBlock = document.getElementById("checkCase");
+
+        let listEmail=JSON.parse(localStorage.getItem(listEmail));
+        let listPassword=JSON.parse(localStorage.getItem(listPassword));
+
+        for(let i=0; i<listEmail.length && i<listPassword.length; i++){
+            if(input_email == listEmail[i] && input_password == listPassword[i]){
+                console,log("Sign in successfully");
+                caseBlock.innerHTML = "Sign in successfully ";
+                caseBlock.style.color="green";
+                break;
+            }
+            else{
+                console.log("Error");
+                caseBlock.innerHTML="Sign in failed";
+                caseBlock.style.color="red";
+            }
+        }
+    </script>
+</body>
+</html>     
+

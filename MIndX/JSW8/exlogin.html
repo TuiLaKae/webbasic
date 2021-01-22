@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button></button>
+    <input type="email">
+    <input type="psw">
+    <button class="formButton" onclick="login()">SIGN IN</button>
+    <p>Không có tài khoản?  <a href="./signup.html">Tạo tài khoản</a></p> 
+    <p id="checkCase" style="display: none">Đăng nhập thất bại, vui lòng thử lại!</p>
+
+    <script>
+        
+        let a = document.getElementById("email").value;
+        let b = document.getElementById("psw").value;
+        let c = JSON.parse(localStorage.getItem("email"));
+        let d = JSON.parse(localStorage.getItem("psw"));
+        for(i=0 ; i<c.length && d.length; i++){
+            if(a==c[i] && b==d[i]){
+                check.innerHTML="Login Successfully"
+            }
+            else{
+                let check = document.getElementById("checkCase");
+            }
+        }
+        
+        
+        
+    </script>
+</body>
+</html>
