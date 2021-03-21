@@ -46,8 +46,17 @@
     width: 30%;
     padding-left: 20px;
 }
+.introduction > button{
+    margin-left: 300px;
+    width: 200px;
+    height: 50px;
+    border-style: none;
+
+}
 .introduction > button > a{
-    margin-right: 100px;
+    text-decoration: none;
+    text-align: center;
+
 }
 
 
