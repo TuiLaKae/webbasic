@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="nice-body">
+    <ul id="list"></ul>
+    <script>
+        let cha = document.getElementById("nice-body");
+        // let h1 = "<h1> Tui Là Kae Oke?</h1>";
+        // let h2 = "<h2> Oke Bạn Là Kae!</h2>";
+        // cha.innerHTML += h1 + h2;
+
+
+        // let newh1 = document.createElement("h1");
+        // newh1.innerHTML = "Rae Nè Kae Ơi";
+        // cha.appendChild(newh1);
+
+
+        // let job1 = document.createElement("h1");
+        // job1.innerHTML = "nhìn";
+        // cha.appendChild(job1);
+
+        // let job2 = document.createElement("h1");
+        // job2.innerHTML = "xem";
+        // cha.appendChild(job2);
+        
+        // let job3 = document.createElement("h1");
+        // job3.innerHTML = "dòm";
+        // cha.appendChild(job3);
+
+        // let job4 = document.createElement("h1");
+        // job4.innerHTML = "ngó";
+        // cha.appendChild(job4);
+
+        // let job5 = document.createElement("h1");
+        // job5.innerHTML = "liếc";
+        // cha.appendChild(job5);
+
+
+         let JOB = ["nhìn", "xem", "dòm", "ngó", "liếc"];
+        // console.log(JOB);
+        // let viec = JOB.push("hun");
+        // console.log(JOB);
+        // console.log(JOB[3]);
+        // console.log(JOB[0] = "yêu");
+
+
+        let list = document.getElementById("list");
+        let Job1Tag = document.createElement("li");
+        Job1Tag.innerHTML = JOB[0];
+        list.appendChild(Job1Tag);
+
+        let Job2Tag = document.createElement("li");
+        Job2Tag.innerHTML = JOB[1];
+        list.appendChild(Job2Tag);
+
+        let Job3Tag = document.createElement("li");
+        Job3Tag.innerHTML = JOB[2];
+        list.appendChild(Job3Tag);
+
+        let Job4Tag = document.createElement("li");
+        Job4Tag.innerHTML = JOB[3];
+        list.appendChild(Job4Tag);
+        
+        let Job5Tag = document.createElement("li");
+        Job5Tag.innerHTML = JOB[4];
+        list.appendChild(Job5Tag);
+    </script>
+</body>
+</html>

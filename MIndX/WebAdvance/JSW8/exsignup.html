@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign UP</h1>
+    <input id="name" type="name" placeholder="Name">
+    <input id="email" type="email" placeholder="Email">
+    <input id="password" type="passwprd" placeholder="Password">
+    <button onclick="signup()">Sign Up</button>
+    <p>Already have account? <a href="./login.html">Login</a></p>
+    <p id="checkCase"></p>
+    
+    <script>
+        function signup(){
+            let input_email=document.getElementById("email").value;
+            let input_name=document.getElementById("name").value;
+            let input_password=document.getElementById("password").value;
+            let caseBlock=document.getElementById("checkCase");
+            
+            let listEmail=[];
+            let listUsername=[];
+            let listPassword=[];
+            let loi= false;
+            
+
+            if(JSON.parse(localStorage.getItem("listUsername") != null)){
+                listUsername  = JSON.parse(localStorage.getItem("listUsername"));
+            }
+            if(JSON.parse(localStorage.getItem("listPassword") != null)){
+                listPassword  = JSON.parse(localStorage.getItem("listPassword"));
+            }
+            if(JSON.parse(localStorage.getItem("listEmail") != null)){
+                listEmail  = JSON.parse(localStorage.getItem("listEmail"));
+            }
+
+            if (input_email ==""|| input_password ==""|| input_name ==""){
+                console.log("Error");
+                caseBlock.innerHTML="Account already existed";
+                caseBlock.style.color = "red";
+            }
+            else{
+                for(let i=0; i<listEmail.length; i++)
+                if (input_email == listEmail[i]){
+                    console.log("error");
+                    caseBlock.innerHTML="Account already existed";
+                    caseBlock.style.color="red";
+                    loi = true;
+                }
+            }
+
+            if(!loi){
+                listEmail.push(input_email);
+                listUsername.push(input_name);
+                listPassword.push(input_password);
+
+                localStorage.setItem("listUsername", JSON.stringify(listUsername));
+                localStorage.setItem("listPassword", JSON.stringify(listPassword));
+                localStorage.setItem("listEmail", JSON.stringify(listEmail));
+
+                console.log("successfull");
+                caseBlock.innerHTML = "Sign up successfully";
+                caseBlock.style.color = "green";
+                console.log("Email:", input_email);
+                console.log("Name:" , input_name);
+                console.log("Password:", input_password);
+                location.replace("./login.html")
+            }
+        }
+        
+    </script>
+</body>
+</html>

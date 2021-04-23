@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="styleli.css">
+</head>
+<body>
+    
+    <div>
+        <h1>Login</h1>
+        <input id="email" type="email" placeholder="Email">
+        <input id="password" type="password" placeholder="Mật Khẩu">
+        <button class="formButton" onclick="login()"> <a href="./shop.html">SIGN IN</a></button>
+        <p>Không có tài khoản?  <a href="./signup.html">Tạo tài khoản</a></p> 
+        <p id="checkCase" style="display: none">Đăng nhập thất bại, vui lòng thử lại!</p>
+    </div>
+
+    <script>
+        let account_email = "admin";
+        let account_password = "admin";
+
+        let login = function(){
+            let myemail = document.getElementById("email").value;
+            let mypassword = document.getElementById("password").value;
+            let check = document.getElementById("checkCase");
+
+            if (myemail == account_email && mypassword == account_password){
+                check.style.display = "block";
+                check.innerHTML = "Đăng nhập thành công!";
+                check.style.color = "green";
+            }
+            else{
+                check.style.display = "block";
+                check.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>     
+

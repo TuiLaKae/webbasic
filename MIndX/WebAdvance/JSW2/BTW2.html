@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td {
+          border: 5px solid black;
+        }
+        body{padding-top:30px;}
+        label,input{display:block;}
+    </style>
+</head>
+<body>
+    <div>
+        <p style="font-weight: bolder; font-size: 20px;">Ex1</p>
+        <p id ='text'>JavaScript Exercises - w3resource</p> 
+        <div>
+            <button onclick="js_style()">Style</button>
+        </div>
+        <script>
+            let js_style = function(){
+                document.getElementById("text").style.fontSize = "22px" ;
+                document.getElementById("text").style.font = "2";
+                document.getElementById("text").style.color = "red";
+            }
+        </script>
+    </div>
+    <div>
+        <p style="font-weight: bolder ; font-size: 20px;">Ex2</p>;
+        <form name="myForm" action="/action_page.php" method="get">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="button" onclick="formSubmit()" value="Send form data!">    
+            <script>
+                let x = "fname";
+                let y = "lname";
+                document.getElementById("fullname").innerHTML = x + y ;
+            </script>
+            <p id="fullname"></p>
+          </form>
+    </div>
+    <div>
+        <p style="font-weight: bolder ; font-size: 20px;">Ex3</p>
+        <p id="backgroundcolor">dbdffggergehgeheheheh</p>
+            <button onclick="red()">red</button>
+        <button onclick="blue()">blue</button>
+        <button onclick="orange()">orange</button>
+        <script>
+        let red = function(){
+            document.getElementById("backgroundcolor").style.backgroundColor = "red"
+        }
+        let blue = function(){
+            document.getElementById("backgroundcolor").style.backgroundColor = "blue"
+        }
+        let orange = function(){
+            document.getElementById("backgroundcolor").style.backgroundColor = "orange"
+        }
+        </script>
+    </div>
+    <div>
+        <p style="font-weight: bolder ; font-size: 20px;">Ex5</p>
+        <table id="myTable">
+            <tr>
+              <td>Row1 cell1</td>
+              <td>Row1 cell2</td>
+            </tr>
+            <tr>
+              <td>Row2 cell1</td>
+              <td>Row2 cell2</td>
+            </tr>
+            <tr>
+              <td>Row3 cell1</td>
+              <td>Row3 cell2</td>
+            </tr>
+          </table>
+          <br>
+          
+          <button type="button" onclick="myFunction()">Add</button>
+          
+          <script>
+          function myFunction() {
+            var table = document.getElementById("myTable");
+            var row = table.insertRow(0);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            cell1.innerHTML = "new cell 1";
+            cell2.innerHTML = "new cell 2";
+          }
+          </script>
+    </div>
+    <div>
+        <p style="font-weight: bold ; font-size: 15px;">Ex10</p>
+        <p>Input radiu value and get the volume of a sphere.</p>
+        <form action="" method="post" id="MyForm">
+        <label for="radius">Radius</label><input type="text" name="radius" id="radius" required>
+        <label for="volume">Volume</label><input type="text" name="volume" id="volume">
+        <input type="submit" value="Calculate" id="submit">    </form>
+    </div>
+    <div>
+        <p></p>
+        <button onclick="myFunction()">Click</button>;
+        <p id="number"></p>
+        <script>
+            function myFunction() {
+            let w = window.innerWidth;
+            let h = window.innerHeight;
+            document.getElementById("number ").innerHTML = "Width: " + w + "<br>Height: " + h;
+            }
+        </script>
+    </div>
+</body>
+</html>

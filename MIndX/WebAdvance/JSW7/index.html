@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a">kAeKaE</h1>
+    <input id="b" type="text">
+    <script>
+        let a = document.getElementById("a")
+        a.addEventListener("mouseover",function(){
+            console.log("đã đưa chuột vào")
+            document.getElementById("a").style.color = "red"
+        })
+        
+        a.addEventListener("mouseout",function(){
+            console.log("đã đưa chuột ra")
+            document.getElementById("a").style.color = "blue"
+        })
+        let b = document.getElementById("b")
+        b.addEventListener("keypress", function(n){
+            console.log(n.key)
+        })
+    </script>
+</body>
+</html>

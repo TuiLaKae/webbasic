@@ -1,0 +1,38 @@
+.product{
+    display: flex;
+    margin: 80px 0;
+}
+.product__display{
+    width: 40%;
+    margin: 0px 0;
+}
+.product__display__img{
+    width: 600px;
+} 
+.product__text{   
+    width: 40%;
+    padding: 0 5%;
+} 
+.detail-display{
+    width: 30%;
+}
+
+   
+select{
+    width: 100px;
+    font-size: 15px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 30%;
+}
+.GoiY{
+    display: flex;
+    margin-left: 0px;
+}
+.GoiYContent{
+    padding: 0 80px 0 0;
+    justify-content: space-around;
+}
