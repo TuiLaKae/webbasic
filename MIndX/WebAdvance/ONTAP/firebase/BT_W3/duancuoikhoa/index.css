@@ -1,7 +1,6 @@
 body{
-  background-image: url(./img/110256579-hand-drawn-vector-illustration-back-to-school-background-sketch-design-elements-education-study-teac.jpg);
+  background: linear-gradient( to right, rgb(110, 226, 255) 5%,rgba(0, 140, 255, 0) 160%);
 }
-
 
 
 .navbar{
@@ -65,7 +64,7 @@ body{
   letter-spacing: 3px;
   border-style: solid;
   border-width: thick;
-  margin-top: 120px;
+  margin-top: 80px;
   height: 100px;
 }
 
@@ -98,7 +97,17 @@ body{
 }
 
 
-
+.text-center text-white{
+ padding-top: 10px;
+}
+.fab >img{
+  width: 4000px;
+  height: 2px;
+}
+.fab > img{
+  width: 20px;
+  height: 20px;
+}
 
 
 
