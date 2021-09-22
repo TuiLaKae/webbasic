@@ -1,17 +1,75 @@
-body{
-  background: linear-gradient( to right, rgb(110, 226, 255) 5%,rgba(0, 140, 255, 0) 160%);
+#page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+.cool-link{
+  display: inline-block;
+  color:white;
+  text-decoration: none;
+  transition: 0.3s ease-in;
+  border-bottom: solid 2px black;
+}
+.navbar-contents{
+  width: 100%;
+}
+.navbar-contents a{
+  letter-spacing: 0.1em;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.699)
+}
 
-.navbar{
-    border-color: black;
-    display: flex;
-    flex: 8;
-    flex-direction: row;
-    height: 120px;
-    border-style: double;
-    margin-top: 25px;
-    border-width: thick;
+.navbar li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar ul {
+  height: 50px;
+}
+
+.navbar li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.active {
+  padding-left: 10px;
+}
+
+.navbar-contents li {
+  height: 100%;
+}
+footer{
+  clear: both;
+  position: relative;
+  min-height: 5px;
+  margin-top: -200px;
+}
+
+.navbar-contents li a {
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.cool-link:hover {
+  border-bottom: solid 5px black;
+  color: white;
 }
 .navbar_img{
     flex: 1;
@@ -59,22 +117,18 @@ body{
 
 
 .ds{
-  text-align: center;
-  padding-top: 20px;
-  letter-spacing: 3px;
-  border-style: solid;
-  border-width: thick;
-  margin-top: 80px;
-  height: 100px;
+  letter-spacing: 0.1em;
+  padding-left: 1.8vw;
+  margin-top: 2vh;
 }
 
 
 
-.container{
+.container-fluid{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
 }
 .container_box{
   height: 100px;
@@ -84,7 +138,11 @@ body{
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 30px;
-  border-width: thick;
+  border-width: 2px;
+}
+.container_box:hover{
+  background-color: gray;
+  transition: 0.2s ease-in;
 }
 .container_box_content{
   display: flex;
@@ -95,8 +153,6 @@ body{
   text-decoration: none;
   color: black;
 }
-
-
 .text-center text-white{
  padding-top: 10px;
 }
@@ -108,14 +164,127 @@ body{
   width: 20px;
   height: 20px;
 }
+.footer{
+  background-color: wheat;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+.slogan{
+  font-family: 'Carattere', cursive;
+}
 
 
 
 
 
-
-
-
-
-
-
+.ds-border{
+  border: solid;
+  display: flex;
+  flex: 10;
+}
+.ds-border-stt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.ds-border_stt_contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid;
+}
+.ds-border_ten{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 3;
+}
+.ds-border_ten_contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid;
+}
+.ds-border_toan{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.ds-border_toan_contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid;
+}
+.ds-border_van{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.ds-border_van_contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid;
+}
+.ds-border_anh{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.ds-border_anh_contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid;
+}
+.ds-border_dtb{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.ds-border_dtb_contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid;
+}
+.ds-border_hl{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.ds-border_hl_contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid;
+}
+.ds-border_hk{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.ds-border_hk_contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid;
+}
