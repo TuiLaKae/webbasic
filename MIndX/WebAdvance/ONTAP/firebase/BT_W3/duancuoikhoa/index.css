@@ -22,6 +22,9 @@
   transition: 0.3s ease-in;
   border-bottom: solid 2px black;
 }
+#changeClass{
+  cursor: pointer;
+}
 .navbar-contents{
   width: 100%;
 }
@@ -121,6 +124,10 @@ footer{
   padding-left: 1.8vw;
   margin-top: 2vh;
 }
+#addClass{
+  letter-spacing: 0.1em;
+  margin: 20px 0 0 0.7vw;
+}
 
 
 
@@ -143,6 +150,7 @@ footer{
 .container_box:hover{
   background-color: gray;
   transition: 0.2s ease-in;
+  cursor: pointer;
 }
 .container_box_content{
   display: flex;
@@ -175,14 +183,11 @@ footer{
   font-family: 'Carattere', cursive;
 }
 
-
-
-
-
 .ds-border{
   border: solid;
   display: flex;
   flex: 10;
+  margin: 0 3vw 0 3vw;
 }
 .ds-border-stt{
   display: flex;
@@ -201,7 +206,7 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 3;
+  flex: 1;
 }
 .ds-border_ten_contain{
   display: flex;
@@ -210,81 +215,36 @@ footer{
   width: 100%;
   border: solid;
 }
-.ds-border_toan{
+.STT{
+  padding: 0 5px 0 5px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  flex: 1;
+  justify-content: center;
 }
-.ds-border_toan_contain{
+.editButton{
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 83vw;
+}
+#avg{
+margin-right: 10px;
+}
+.ds-border_stt_contain_subject{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   border: solid;
 }
-.ds-border_van{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
+#inputPassword6{
+  margin: 10px 0 0 10px;
 }
-.ds-border_van_contain{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border: solid;
+#saveClass{
+  letter-spacing: 0.1em;
+  margin: 20px 0 0 5px;
 }
-.ds-border_anh{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-}
-.ds-border_anh_contain{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border: solid;
-}
-.ds-border_dtb{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-}
-.ds-border_dtb_contain{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border: solid;
-}
-.ds-border_hl{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-}
-.ds-border_hl_contain{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border: solid;
-}
-.ds-border_hk{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-}
-.ds-border_hk_contain{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border: solid;
+#refresh{
+  letter-spacing: 0.1em;
+  margin: 20px 0 0 5px;
 }
